@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _05102026
 {
-    internal abstract class Animale
+    internal abstract class Animale : IVerso
     {
         private string _nome;
         private int _age;
@@ -16,6 +16,7 @@ namespace _05102026
             get { return _nome; }
             set { _nome = value; }
         }
+
         public int Age
         {
             get { return _age; }
@@ -33,6 +34,7 @@ namespace _05102026
             _nome = "Bob";
             _age = 1;
         }
+
         public abstract string Verso();
     }
 }
