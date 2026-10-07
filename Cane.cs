@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,8 +10,6 @@ namespace _05102026
     {
         public Cane(string nome, int age) : base(nome, age)
         {
-            Nome = nome;
-            Age = age;
         }
 
         public override string Verso()
